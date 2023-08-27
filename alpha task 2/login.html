@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Family Tour Login</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      
+      <form action="form.php" method="post" id="demo-form">
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+
+        <div class="g-recaptcha" data-sitekey="6LeZ3L0nAAAAAK0YnLD3U2YE5aFa1Iv_9SFwNbgQ"></div>
+  <br/>
+  <input type="submit" value="login">
+        
+      </form>
+    </div>
+
+    <script>
+      function onSubmit(token) {
+     document.getElementById("demo-form").submit();
+       }
+           
+    </script>
+  </body>
+ 
+</html>
+
